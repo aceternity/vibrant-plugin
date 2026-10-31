@@ -1,0 +1,47 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "vibrant-design",
+  "version": "1.0.0",
+  "description": "Design inspiration and references while you build: the latest, trending and weekly-picked websites, sections, motion and launch videos from vibrant.design, and pick-then-build flows that turn the design you choose into your landing page or section via its DESIGN.md and build notes.",
+  "author": {
+    "name": "Vibrant Design",
+    "url": "https://vibrant.design"
+  },
+  "homepage": "https://vibrant.design/dashboard/agents",
+  "license": "MIT",
+  "keywords": [
+    "design",
+    "landing page",
+    "ui inspiration",
+    "moodboard",
+    "design system",
+    "DESIGN.md",
+    "inspiration",
+    "motion",
+    "animation"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Vibrant Design",
+        "shortDescription": "Design inspiration for agents",
+        "longDescription": "Building a landing page or a section? Vibrant suggests curated website, hero, features, pricing and footer designs that fit your product and style. Pick one and get its DESIGN.md and build notes, or collect picks on a moodboard and turn them into one design direction your agent implements section by section.",
+        "category": "Design",
+        "capabilities": [
+          "Read",
+          "Write"
+        ],
+        "websiteURL": "https://vibrant.design",
+        "privacyPolicyURL": "https://vibrant.design/privacy",
+        "termsOfServiceURL": "https://vibrant.design/terms",
+        "defaultPrompt": [
+          "What is trending on Vibrant this week?",
+          "Show me scroll animation ideas for a SaaS homepage",
+          "Suggest Vibrant hero designs for my app, then build the one I pick"
+        ],
+        "logo": "./assets/logo.svg",
+        "composerIcon": "./assets/logo.svg"
+      }
+    }
+  }
+}
