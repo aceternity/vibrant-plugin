@@ -10,6 +10,7 @@
     "url": "https://vibrant.design"
   },
   "homepage": "https://vibrant.design/dashboard/agents",
+  "repository": "https://github.com/aceternity/vibrant-plugin",
   "license": "MIT",
   "suggestedPrompts": [
     "What is trending on Vibrant this week?",

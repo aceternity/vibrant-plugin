@@ -8,6 +8,7 @@
     "url": "https://vibrant.design"
   },
   "homepage": "https://vibrant.design/dashboard/agents",
+  "repository": "https://github.com/aceternity/vibrant-plugin",
   "license": "MIT",
   "keywords": [
     "design",
