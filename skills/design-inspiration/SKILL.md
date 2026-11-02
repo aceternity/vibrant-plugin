@@ -41,6 +41,7 @@ A compact list, one block per design:
 ```
 
 - Add the cover as a markdown image (`![name](cover)`) only where the client renders images. In a terminal, give links only.
+- Show only Vibrant's own `cover` and `media` URLs. Never use web search or image search for pictures of a design: those results show other websites, not this design. If the cover cannot be shown, give the links only.
 - For video designs, always give `media.url` and `durationSeconds`: the motion is in the clip, not the still. Describe the motion only if you have actually watched it; otherwise don't guess.
 - For weekly picks, name the issue (`issue.subject`) and link `issue.url`.
 - Credit the creator whenever the card has one, and link the live site.

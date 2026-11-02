@@ -31,7 +31,7 @@ Show the options compactly, one per line block:
    https://vibrant.design/p/night-hero
 ```
 
-Add the cover as a markdown image (`![Night Hero](cover)`) only where the client renders images (chat apps). In a terminal, give the link only. For video designs, also give `media.url` and its length so the user can watch the motion. Credit the creator when the card has one.
+Add the cover as a markdown image (`![Night Hero](cover)`) only where the client renders images (chat apps). In a terminal, give the link only. Show only Vibrant's own `cover` and `media` URLs; never use web or image search for pictures of a design. For video designs, also give `media.url` and its length so the user can watch the motion. Credit the creator when the card has one.
 
 Ask: "Which one should I build from? A number, 'mix 1 and 3', or 'you pick'." Then wait. If the user already said to just build it, take the top option and say why in one line. If the section came back with a `note` (no designs of that kind), say so and offer the website references or `search_designs`.
 

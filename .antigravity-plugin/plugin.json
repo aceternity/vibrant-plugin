@@ -2,7 +2,7 @@
   "$schema": "https://antigravity.google/schemas/v1/plugin.json",
   "name": "vibrant-design",
   "displayName": "Vibrant Design",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Design inspiration and references while you build: the latest, trending and weekly-picked websites, sections, motion and launch videos from vibrant.design, and pick-then-build flows that turn the design you choose into your landing page or section via its DESIGN.md and build notes.",
   "logo": "assets/logo.svg",
   "author": {
