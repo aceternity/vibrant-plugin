@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "vibrant-design",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Design inspiration and references while you build: the latest, trending and weekly-picked websites, sections, motion and launch videos from vibrant.design, and pick-then-build flows that turn the design you choose into your landing page or section via its DESIGN.md and build notes.",
   "author": {
     "name": "Vibrant Design",
@@ -99,7 +99,7 @@
         "commerce_description": "The plugin does not sell products or process payments. Paid Vibrant features (DESIGN.md, analysis, direction builds) use the user's existing plan and credits on vibrant.design; tools that spend credits state the cost and run only after the user confirms."
       },
       "publication": {
-        "release_notes": "First release. Browse the curated vibrant.design gallery from ChatGPT: new, trending and weekly-pick designs by kind, style, category or interaction. Get design suggestions for a page or section, pick one and get its DESIGN.md and build notes. Read and edit your Vibrant moodboards and turn them into one design direction. Free to browse; DESIGN.md, analysis and builds need a Vibrant plan and ask before spending credits."
+        "release_notes": "First release. Browse the curated vibrant.design gallery from ChatGPT: new, trending and weekly-pick designs by kind, style, category or interaction. Get design suggestions for a page or section, pick one and get its DESIGN.md and build notes. Read and edit your Vibrant moodboards and turn them into one design direction. Steps that use Vibrant credits state the cost and run only after you confirm."
       }
     }
   }
