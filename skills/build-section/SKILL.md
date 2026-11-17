@@ -5,7 +5,7 @@ description: Build or redesign one website section (hero, navbar, features or be
 
 # Build a section from Vibrant references
 
-Uses the Vibrant MCP server (`suggest_designs`, `get_design_md`, `get_design_style`, `get_design_status`, `analyze_design`). If those tools are not available, tell the user they can connect Vibrant at https://vibrant.design/dashboard/agents, then build the section without references.
+Uses the Vibrant MCP server (`suggest_designs`, `show_designs`, `get_design_md`, `get_design_style`, `get_design_status`, `analyze_design`). If those tools are not available, tell the user they can connect Vibrant at https://vibrant.design/dashboard/agents, then build the section without references.
 
 ## 1. Read the project first
 
@@ -24,14 +24,14 @@ Call `suggest_designs` with:
 
 ## 3. Let the user pick
 
-Show the options compactly, one per line block:
+Call `show_designs` with the options in order (`projectId` + a one-line `note` with the why, `title` such as "Hero options"), so the user sees the covers with View on Vibrant and Live site links. Then show them compactly in text, one per line block:
 
 ```
 1. **Night Hero** · Hero design · Dark Mode style · DESIGN.md ready
    https://vibrant.design/p/night-hero
 ```
 
-Add the cover as a markdown image (`![Night Hero](cover)`) only where the client renders images (chat apps). In a terminal, give the link only. Show only Vibrant's own `cover` and `media` URLs; never use web or image search for pictures of a design. For video designs, also give `media.url` and its length so the user can watch the motion. Credit the creator when the card has one.
+Do not write markdown images and do not link `media.url` to the user: `show_designs` shows the covers, and the user watches motion on the vibrant.design page. Give the live site link. Never use web or image search for pictures of a design. Credit the creator when the card has one.
 
 Ask: "Which one should I build from? A number, 'mix 1 and 3', or 'you pick'." Then wait. If the user already said to just build it, take the top option and say why in one line. If the section came back with a `note` (no designs of that kind), say so and offer the website references or `search_designs`.
 

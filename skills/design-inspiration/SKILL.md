@@ -5,7 +5,7 @@ description: Find design inspiration on vibrant.design - the latest additions, w
 
 # Design inspiration from Vibrant
 
-Uses the Vibrant MCP server (`discover_designs`, `list_categories`, `find_similar_designs`, `search_designs`). If those tools are not available, point the user to https://vibrant.design and tell them they can connect Vibrant at https://vibrant.design/dashboard/agents.
+Uses the Vibrant MCP server (`discover_designs`, `show_designs`, `list_categories`, `find_similar_designs`, `search_designs`). If those tools are not available, point the user to https://vibrant.design and tell them they can connect Vibrant at https://vibrant.design/dashboard/agents.
 
 ## 1. Pick the feed and filters
 
@@ -31,18 +31,19 @@ Combine them freely (for example trending + sections + `interaction: "scroll"`).
 
 ## 2. Present it
 
-A compact list, one block per design:
+First call `show_designs` with the `projectId`s you will present, in order, each with a one-line `note` (why it fits; `pickedBecause` for weekly picks) and a short `title` ("Trending this week"). Chat apps show them as cards: the cover image, a **View on Vibrant** link and a **Live site** link.
+
+Then a compact text list, one block per design:
 
 ```
 1. **Night Hero** · section · by @ana · dark-mode
    Why: A glow that guides the eye.          (weekly picks: pickedBecause)
    https://vibrant.design/p/night-hero · live: https://night.example
-   Video (42 s): <media.url>                 (video designs only)
 ```
 
-- Add the cover as a markdown image (`![name](cover)`) only where the client renders images. In a terminal, give links only.
-- Show only Vibrant's own `cover` and `media` URLs. Never use web search or image search for pictures of a design: those results show other websites, not this design. If the cover cannot be shown, give the links only.
-- For video designs, always give `media.url` and `durationSeconds`: the motion is in the clip, not the still. Describe the motion only if you have actually watched it; otherwise don't guess.
+- Do not write markdown images: `show_designs` shows the covers, and chat apps block images in text ("Unverified image").
+- Do not link `media.url` (the video clip). Motion is watched on the vibrant.design page; say "motion" and the length (`durationSeconds`) if it helps. Describe the motion only if you have actually watched it; otherwise don't guess.
+- Never use web search or image search for pictures of a design: those results show other websites, not this design.
 - For weekly picks, name the issue (`issue.subject`) and link `issue.url`.
 - Credit the creator whenever the card has one, and link the live site.
 

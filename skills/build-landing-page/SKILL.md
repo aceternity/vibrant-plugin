@@ -18,7 +18,7 @@ Call `suggest_designs` with `brief` (product, audience, mood in one or two sente
 
 If the user has no direction yet ("show me what's out there first"), start with the `design-inspiration` skill, then come back here with what they liked.
 
-Present it in two steps, compactly (name, why, link, creator; cover as a markdown image only where the client renders images; for video designs also `media.url`; never web or image search for pictures of a design):
+Present it in two steps. For each step call `show_designs` with the options (`projectId` + a one-line `note` with the why, `title` such as "Overall look" or "Hero"), so the user sees the covers. In text keep it compact: name, why, the vibrant.design link, the live site, creator. No markdown images, no `media.url` links; never web or image search for pictures of a design:
 
 1. **Overall look**: the `websites`. Ask the user to pick one.
 2. **Per section**: 2–3 options each. Ask for one pick per section (for example "hero 2, features 1, pricing 3", or "you pick the rest"). Sections with a `note` have no gallery designs: they follow the overall look.

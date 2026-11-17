@@ -1,6 +1,6 @@
 # Vibrant Design
 
-Design inspiration and references, right where you build. Ask your agent what's new or trending in web design, for motion and interaction ideas (hover, scroll, drag, micro-interactions), launch videos or OG images, and it browses the curated vibrant.design gallery for you, with the video clip, the creator and the live site for every design.
+Design inspiration and references, right where you build. Ask your agent what's new or trending in web design, for motion and interaction ideas (hover, scroll, drag, micro-interactions), launch videos or OG images, and it browses the curated vibrant.design gallery for you, shown as cards with the cover, the creator, a link to the design on vibrant.design and the live site.
 
 When you build a landing page or a section (hero, features, pricing, testimonials, CTA, footer), Vibrant suggests designs that fit your product and style. You pick one per section, and the agent builds it from that design's DESIGN.md and build notes, in your own stack and with your own copy.
 
